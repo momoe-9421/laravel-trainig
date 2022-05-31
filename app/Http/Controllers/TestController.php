@@ -6,9 +6,13 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function index()
+    public function index($param)
     {
-       $data=['cat','dog','pig'];
-       return view('test',compact('data'));
+        $item=
+        [
+            'txt'=>'テキスト',
+            'param'=>$param
+        ];
+        return view('index',$item);
     }
-};
+}

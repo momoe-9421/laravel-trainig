@@ -8,7 +8,6 @@
 </head>
 <body>
     <h1><?php echo $txt;?></h1>
-    <h1><?php echo $param;?></h1>
-    
+    <h1><?php echo $param; ?></h1>
 </body>
 </html>
